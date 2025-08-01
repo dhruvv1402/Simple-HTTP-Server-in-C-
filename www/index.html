@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTTP Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the C++ HTTP Server</h1>
+    
+    <div class="container">
+        <h2>Server Information</h2>
+        <p>This is a simple HTTP server implemented in C++ using Boost libraries.</p>
+        <p>Features:</p>
+        <ul>
+            <li>Handles basic GET requests</li>
+            <li>Serves static HTML files</li>
+            <li>Supports various content types</li>
+            <li>Provides proper error handling</li>
+        </ul>
+    </div>
+
+    <div class="container" style="margin-top: 20px;">
+        <h2>Usage</h2>
+        <p>To start the server, use the following command:</p>
+        <code>./http_server 8080 ./www</code>
+        <p>Where:</p>
+        <ul>
+            <li><code>8080</code> is the port number</li>
+            <li><code>./www</code> is the document root directory</li>
+        </ul>
+    </div>
+
+    <div class="container" style="margin-top: 20px;">
+        <h2>Test Links</h2>
+        <p>Try accessing these resources:</p>
+        <ul>
+            <li><a href="/index.html">This page (index.html)</a></li>
+        </ul>
+    </div>
+
+    <footer style="margin-top: 30px; text-align: center; color: #7f8c8d;">
+        <p>C++ HTTP Server Demo - Built with Boost.Beast and Boost.Asio</p>
+    </footer>
+</body>
+</html>
